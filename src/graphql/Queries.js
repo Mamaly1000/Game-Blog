@@ -1,7 +1,7 @@
 import { gql } from "@apollo/client";
 const GET_POSTS_INFO = gql`
   query {
-    posts {
+    posts(stage: PUBLISHED, first: 30) {
       company {
         companysname
         companyAvatar {

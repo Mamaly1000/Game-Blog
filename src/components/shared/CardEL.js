@@ -40,7 +40,7 @@ const CardEL = (props) => {
 
   return (
     <Grid item xs={12} sm={6} md={4}>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345, minWidth: 250 }}>
         <Link
           to={`/posts/${props.slug}`}
           style={{ textDecoration: "none", color: "#000" }}
